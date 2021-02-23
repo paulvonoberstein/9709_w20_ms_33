@@ -10,10 +10,13 @@
   <input type ="file" name = "file">
     <button type = "submit" name = "submit">UPLOAD</button>
     
-    <h1> Q1: Solve the inequality 2 - 5x > 2|x-3|</h1>
+
+
+    <!-- Question 1: Modulus -->
     
     <img src = "Q1.png" alt = " Q1: Solve the inequality 2 - 5x > 2|x-3|">
     
+
     <p> The safest way to do this is to square both sides and use a number line to check your answer. Note that the modulus function
     and the square function are similar in that they both invert negative values but leaves positive values alone.
     
@@ -38,11 +41,134 @@
     
     </p>
 
+    <!-- Question 2: Complex Number-->
+
+    <img src = "" alt = "">
+
     <p> For the next question, you'll have to draw an Argand diagram. An Argand diagram is just a fancy way of
-      describing a graph with a real x axis and an imaginary y axis.
+      describing a graph with a real x axis and an imaginary y axis. The first of the equation |z| >= 2 means 
+      that the modulus of the complex number z is 2. The modulus is like the magnitude of the line drawn from the 
+      origin to the complex number z. So we draw a dashed line circle with radius 2 from the origin, and since it's >2, that means 
+     you shade everything outside the circle since they are all >=2. The second component is the |z - 1 + 1| <= 1.
+     First we invert the signs to get 1 - i. Draw a dot at this point in the diagram and then draw a dashed line 
+     circle with radius 1 and shade everything within the circle. The overlapping regions of the first and second
+     equation are the values of z that satisfy both |z| >= 2 and |z - 1 + i| <= 1. 
     </p>
-    
-    
+
+
+    <!--Question 3: Differentitation-->
+    <img src = "" alt = "">
+    <p> We are given a definition for x and y and are asked to find dy/dx. Notice how both x and y share a common
+      variable θ. We can use this to link x and y. Find dx/dθ and dy/dθ, and then rearrange and multiply
+      to find dy/dx. 
+
+      Notice how both x and y have a double angle within their trig function. We can replace these with their 
+      non-double equivalent to differentiate them more easily.
+
+      x = 3 - cos(2θ)
+      x = 3 - (1 - 2sin^2(θ))
+
+      x = 2 + 2sin^2(θ)
+      dx/dθ = 0 + 2 * 2sin(θ) * cos(θ)
+      dx/dθ = 4sin(θ)cos(θ)
+
+      now we'll find dy/dθ
+
+      y = 2θ + sin(2θ)
+      y = 2θ + 2sin(θ)cos(θ)
+      dy/dθ = 2 + 2(sin(θ) * -sin(θ) + cosθ * cos(θ))
+      dy/dθ = 2 + 2(cos^2(θ) - sin^2(θ))
+      dy/dθ = 2(1 + cos^2(θ) - sin^2(θ))
+
+      here we'll replace 1 with cos^2(θ) + sin^2(θ)
+
+      dy/dθ = 2(cos^2(θ) + sin^2(θ) + cos^2(θ) - sin^2(θ))
+      dy/dθ = 2(2cos^2(θ))
+      dy/dθ = 4cos^2(θ)
+      
+      dy/dx = dy/dθ * dθ/dx
+      dy/dx = 4cos^2(θ) / 4sin(θ)cos(θ)
+      dy/dx = cot(θ)
+
+
+
+    </p>
+  <!--Question 4: Logs-->
+
+  <img src = "Q4.png" alt = "Solve the equation log(2x + 1) = 2 log(x + 1) − 1.">
+    <p> The first thing you should notice is that all of the terms escept for one are in logs.
+    To simplify problems like these, we can attempt to convert every term into log-based terms.
+    This is not always possible but 1 is a very convenient number because it is simply log 10. 
+       
+    log(2x + 1) = 2log(x + 1) - 1
+    log(2x + 1) = 2log(x + 1) - log(10)
+
+    now we can apply some log laws. We'll use the following:
+    Alog(B) = log(B^A)
+    log(A) + log(B) = log(AB)
+
+    log(2x + 1) + log(10) = log((x + 1)^2)
+    log(20x + 10) = log((x + 1)^2)
+
+    because both sides now have only a singular log, we can completely remove it. 
+    Then it's a simple matter or rearranging and finding x with the quadratic formula.
+
+    20x + 10 = (x + 1)^2
+    20x + 10 = x^2 + 2x + 1
+    x^2 - 18x - 9 = 0
+    x = 9 +- 3root10
+
+      
+  
+  </p>
+    <!-- Question 5: Placeholder-->
+
+
+    <!-- Question 6: Double Angles -->
+
+    <img src="" alt = "root6*cos(θ) + 3sin(θ)">
+
+
+    <p>
+      The value of root6*cos(θ) + 3sin(θ) will fluctuate from a minimum to a maximum,
+      depending on the angle θ. For every form of Acos(θ) + Bsin(θ), the value of θ which
+      will yield the maximum value will differ. For example, in 10cos(θ) - 10sin(θ), the max
+      value will be 10 when θ is 0 degrees, but in -10cos(θ) + 10sin(θ), the max value will
+      still be 10, but it will occur when θ is 180 degrees or pi radians. 
+
+      However, the one thing that will stay constant no matter the value of A and B is the 
+      max value. It will always be root(A^2 + B^2). This is known as the modulus, or the hypotenuse of 
+      the triangle, or the length of the line. It's interesting but expected that the concept of
+      triangles would come up in a topic about angles. 
+
+      Notice that the question asks for the form Rcos(θ - α). R is the maximum value, and this expression
+      will fluctuate from -R to R depending on θ. α is a constant. α is the angle at which the max
+      value R will occur. If you noticed, at angle θ = α, the expression will become Rcos(0) which is 
+      simply R. 
+
+      Anyways on to the question;
+
+      R = root(A^2 + B^2)
+      R = root(6 + 9)
+      R = root15
+
+      We can now use the double angle formula to expand Rcos(θ - α)
+
+      Rcos(θ - α) = R * (cos(θ)cos(α) + sin(θ)sin(α)) 
+
+      now we'll substitute in R and compare it to the provided expression:
+      
+      root6*cos(θ) + 3sin(θ) = root15 * (cos(θ)cos(α) + sin(θ)sin(α))
+
+
+
+       
+      
+      
+
+
+
+    </p>
   
   
 </body>
