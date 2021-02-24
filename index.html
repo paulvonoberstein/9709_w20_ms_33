@@ -61,6 +61,7 @@
     <button type = "submit" name = "submit">UPLOAD</button>
     
 
+    <p>Note: √9cos(50) means root 9, multiplied by cos 50, while √(9cos(50)) means root 9*cos(50)</p>
 
     <!-- Question 1: Modulus -->
     
@@ -97,12 +98,12 @@
       
     When x = -2 or 2, the statement 21x<sup>2</sup> + 4x - 32 evaluates to 44 and 60 respecitively, and both are > 0. <br>
     but when x = 0, the expression evaluates to -32, which is not > 0. <br>
-    Hence, the answer is x < <sup>-4</sup>/<sub>3</sub> and x > <sup>8</sup>/<sub>7</sub>. <br>
+    Hence, the answer is x <sup>-4</sup>/<sub>3</sub> and x > <sup>8</sup>/<sub>7</sub>. <br>
     
     </p>
     
 
-    <!-- Question 2: Complex Number-->
+    <!-- Question 2: Complex Number Argand Diagram-->
 
     <img src = "" alt = "">
 
@@ -125,7 +126,7 @@
 
     <!--Question 3: Differentitation-->
     <img src = "" alt = "">
-    <p class = "equation"> We are given a definition for x and y and are asked to find <sup>dy</sup>/<sub>dx</sub>. <br>
+    <p class = "equation centre"> We are given a definition for x and y and are asked to find <sup>dy</sup>/<sub>dx</sub>. <br>
        Notice how both x and y share a common variable θ. We can use this to link x and y. <br>
       If we find <sup>dx</sup>/<sub>dθ</sub> and <sup>dy</sup>/<sub>dθ</sub>, we can then rearrange them and multiply
       to find <sup>dy</sup>/<sub>dx</sub>. <br>
@@ -206,7 +207,7 @@
 
     <!-- Question 6a: Double Angles -->
 
-    <img src="" alt = "√6*cos(θ) + 3sin(θ)">
+    <img src="" alt = "√6cos(θ) + 3sin(θ)">
 
 
     <p class = "explanation">
@@ -218,7 +219,7 @@
       However, the one thing that will stay constant no matter the way to caclulate the max value. <br>
       It will always be √(A<sup>2</sup>> + B<sup>2</sup>>). This is known as the modulus, or the hypotenuse of 
       the triangle, or the length of the line. <br>
-      It's interesting but expected that the concept of triangles would come up in a topic about angles. <br>
+      It's interesting but should be expected that the concept of triangles would come up in a topic about angles. <br>
 
       Notice that the question asks for the form Rcos(θ - α). R is the maximum value, and this expression
       will fluctuate from -R to R depending on θ. <br>
@@ -235,13 +236,15 @@
 
       We can now use the double angle formula to expand Rcos(θ - α) <br>
 
-      <span = class="equation">
-      Rcos(θ - α) = R * (cos(θ)cos(α) + sin(θ)sin(α)) 
+      <span class="equation">
+      Rcos(θ - α) = R(cos(θ)cos(α) + sin(θ)sin(α)) 
       </span>
 
       now we'll substitute in R and compare it to the provided expression: <br>
       
-      √6cos(θ) + 3sin(θ) = √15 * (cos(θ)cos(α) + sin(θ)sin(α)) <br>
+      <span class = "equation">
+      √6cos(θ) + 3sin(θ) = √15(cos(θ)cos(α) + sin(θ)sin(α)) <br>
+      </span>
 
       From here, we'll substitute θ with very convenient values to get rid of some terms so that we can find α. <br> 
       These values are 0 and 180 degrees (or 0 and π radians). <br>
@@ -263,40 +266,108 @@
 
     <!--Question 6B: Using the Formula-->
 
-    <p>
+    <p class = "equation">
 
-      we can use the formula we made from 6A to solve this problem. However, we'll remove all 
-      the additional components attached to the angle θ. We will deal with this later. Therefore
-      the formula we'll use is:
+      we can use the formula we made from 6A to solve this problem. <br>
+      However, we'll remove all the additional components attached to the angle θ to simplify the expression. <br>
+      This includes the (+ 50.77) and <sup>1</sup>/<sub>3</sub> components. <br>
+      We will deal with this later. Therefore the formula we'll use is: <br>
 
-       √15*cos(θ) = 2.5
+      <span class = "equation">
+       √15cos(θ) = 2.5 <br>
+      </span>
 
-       then we just rearrange to find θ. 
+       then we just rearrange to find θ. <br>
 
-       cos(θ) = 2.5 / √15
-       θ = arccos(2.5 / √15)
-       θ = 49.797 degrees
+      <span class = "equation">
+       cos(θ) = 2.5 / √15 <br>
+       θ = arccos(2.5 / √15) <br>
+       θ = 49.797 degrees <br>
+      </span>
 
        We know that √15cos(θ - 50.77) APPROXIMATES to √6cos(θ) + 3sin(θ), and that
-       √15cos(49.797) = 2.5. 
+       √15cos(49.797) = 2.5. <br>
 
-       So this means that:
-        θ = 49.8 + 50.8 
-        θ = 100.6
+      <span class = "equation">
+       So this means that: <br>
+        θ = 49.8 + 50.8 <br>
+        θ = 100.6 <br>
+      </span>
 
-        Finally, we need to approximate for √6cos(⅓x) + 3sin(⅓x), not √6cos(θ) + 3sin(θ).
-        So ⅓x = θ. So the first value of x is 3*100.6 = 301.8
+        Finally, we need to approximate for √6cos(⅓x) + 3sin(⅓x), not √6cos(θ) + 3sin(θ). <br>
+        So ⅓x = θ. So the first value of x is 3*100.6 = 301.8 <br>
 
         We now need to find the other values of x. The first value of θ is 49.797, so the 
-        other nearest values we can try are -49.797 and 310.203. We'll repeat the process to 
-        convert θ into x just like before, by adding 50.77 and then multiplying by 3.
+        other nearest values we can try are -49.797 and 310.203. <br>
+        We'll repeat the process to convert θ into x just like before, 
+        by adding 50.77 and then multiplying by 3. <br>
 
-        3*(-49.797 + 50.77) = 2.92
-        3*(310.203 + 50.77) = 1082.92
+      <span class = "equation">
+        3(-49.797 + 50.77) = 2.92 <br>
+        3(310.203 + 50.77) = 1082.92 <br>
+      </span>
 
         It seems that 2.92 is another value of x that will yield an angle θ (-49.797) which satisfies
-        √6cos(θ) + 3sin(θ) = 2.5
+        √6cos(θ) + 3sin(θ) = 2.5 <br>
 
+
+    </p>
+
+    <!--Question 7A: Complex Numbers Factorisation-->
+
+    <p class = "explanation"> If you have a good calculator, you can actually find the squared and cubed
+      functions of the complex number -1 + √5i, but you'll still have to show your working. <br>
+
+      <span class = "equation">
+        x = -1 + √5i <br>
+
+        x<sup>2</sup> = (-1 + √5i)(-1 + √5i) <br>
+        x<sup>2</sup> = 1 - √5i - √5i + 5i<sup>2</sup> <br>
+        x<sup>2</sup> = 1 - 5 - 2√5i <br>
+        x<sup>2</sup> = -4 - 2√5i <br>
+
+        x<sup>3</sup> = x<sup>2</sup> * x <br>
+        x<sup>3</sup> = (-4 - 2√5i)(-1 + √5i)
+        x<sup>3</sup> = 4 - 4√5i + 2√5i - 2(5)i<sup>2</sup>
+        x<sup>3</sup> = 4 + 1- - 2√5i
+        x<sup>3</sup> = 14 - 2√5i
+
+      </span>
+
+      Now that we have evaluated x, x<sup>2</sup> and x<sup>3</sup>, we can simply just substitute them in 
+      and check if 2x<sup>3</sup> + x<sup>2</sup> + 6x - 18 = 0.
+
+      <span class = "equation">
+        2x<sup>3</sup> + x<sup>2</sup> + 6x - 18 = 0 <br>
+        2(14 - 2√5i) + (-4 - 2√5i) + 6(-1 + √5i) - 18 = 0 <br>
+        28 - 4√5i - 4 - 2√5i - 6 + 6√5i - 18 = 0
+
+        </span>
+
+        we'll separate the real and imaginary components and see if they will evaluate to 0. <br>
+
+        <span class = "equation">
+          (28 - 4 - 6 - 18) + (-4√5i - 2√5i + 6√5i) = 0 <br>
+          0 + 0i = 0 <br>
+        </span>
+
+
+    </p>
+
+    <!--Question 7B: Complex Numbers Factorisation part 2-->
+
+    <p class = "explanation">
+      From the previous question, we know that one of the roots of the polynomial 2x<sup>3</sup> + x<sup>2</sup> + 6x - 18 = 0 is -1 + 5i. <br>
+      In bracket form this is (x + 1 - 5i). Notice how A*B*(x + 1 - 5i) = 0, if we put x = -1 + 5i, the expression is true no matter what A or B is. <br>
+      The polynomial does not equal to a so we can immediately tell that one of the other roots is the complement which is -1 - 5i, or (x + 1 + 5i) in brackets. <br>
+      This is because this is the only other factor that when multiplied, gives a real number. And 0 does not have any imaginary component. <br>
+
+      <span class = "equation">
+
+       (x + 1 - √5i)(x - 1 - √5i)(A) = 2x<sup>3</sup> + x<sup>2</sup> + 6x - 18
+       
+
+      </span>
 
     </p>
   
