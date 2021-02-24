@@ -108,13 +108,13 @@
 
     <p class = "explanation centre"> For the next question, you'll have to draw an Argand diagram. <br>
       An Argand diagram is just a fancy name for a graph with a real x axis and an imaginary y axis. <br>
-      The first of the equation |z| ≥ 2 means the modulus of the complex number z is 2. The modulus is like the magnitude of the line drawn from the 
+      The first of the equation <span class="equation">|z| ≥ 2</span> means the modulus of the complex number z is 2. The modulus is like the magnitude of the line drawn from the 
       origin to the complex number z. <br>
       
       This can be represented with a dashed line circle with radius 2 from the origin. Because it evaluates to ≥ 2, 
     we shade everything outside the circle since they all have ≥2 in terms of magnitude. <br> 
     Remember that dashed line means that 2 is within the boundary, whilst a solid line circle would mean that 2 would be outside of the boundary. <br>
-     The second component is the |z - 1 + 1| ≤ 1. <br>
+     The second component is the <span class="equation">|z - 1 + 1| ≤ 1.</span> <br>
      First we invert everything after the z to get the complex number 1 - i. Draw a dot at this point in the Argand diagram, 1 along the real axis and -1 along the 
      imaginary axis. <br>  
      Then, draw a dashed line circle with radius 1 and shade everything within the circle. <br>
@@ -125,37 +125,44 @@
 
     <!--Question 3: Differentitation-->
     <img src = "" alt = "">
-    <p> We are given a definition for x and y and are asked to find <sup>dy</sup>/<sub>dx</sub>. Notice how both x and y share a common
-      variable θ. We can use this to link x and y. Find dx/dθ and <sup>dy</sup>/<sub>dθ</sub>, and then rearrange and multiply
-      to find <sup>dy</sup>/<sub>dx</sub>. 
+    <p class = "equation"> We are given a definition for x and y and are asked to find <sup>dy</sup>/<sub>dx</sub>. <br>
+       Notice how both x and y share a common variable θ. We can use this to link x and y. <br>
+      If we find <sup>dx</sup>/<sub>dθ</sub> and <sup>dy</sup>/<sub>dθ</sub>, we can then rearrange them and multiply
+      to find <sup>dy</sup>/<sub>dx</sub>. <br>
 
-      Notice how both x and y have a double angle within their trig function. We can replace these with their 
-      non-double equivalent to differentiate them more easily.
+      Notice how both x and y have a double angle within their trig function. <br> 
+      We can replace these with their non-double equivalent to differentiate them more easily. <br>
 
-      x = 3 - cos(2θ)
-      x = 3 - (1 - 2sin<sup>2</sup>(θ))
+      <span class = "equation">
+      x = 3 - cos(2θ) <br>
+      x = 3 - (1 - 2sin<sup>2</sup>(θ)) <br>
 
-      x = 2 + 2sin<sup>2</sup>>(θ)
-      <sup>dx</sup>> = 0 + 2 * 2sin(θ) * cos(θ)
-      dx/dθ = 4sin(θ)cos(θ)
+      x = 2 + 2sin<sup>2</sup>>(θ) <br>
+      <sup>dx</sup>> = 0 + 2 * 2sin(θ) * cos(θ) <br>
+      <sup>dx</sup>/<sub>dθ</sub> = 4sin(θ)cos(θ) <br>
+      </span>
 
       now we'll find <sup>dy</sup>/<sub>dθ</sub>
 
-      y = 2θ + sin(2θ)
-      y = 2θ + 2sin(θ)cos(θ)
-      <sup>dy</sup> = 2 + 2(sin(θ) * -sin(θ) + cosθ * cos(θ))
-      <sup>dy</sup>/<sub>dθ</sub> = 2 + 2(cos<sup>2</sup>>(θ) - sin<sup>2</sup>>(θ))
-      <sup>dy</sup>/<sub>dθ</sub> = 2(1 + cos<sup>2</sup>>(θ) - sin<sup>2</sup>>(θ))
+      <span class = "equation">
+      y = 2θ + sin(2θ) <br>
+      y = 2θ + 2sin(θ)cos(θ) <br>
+      <sup>dy</sup> = 2 + 2(sin(θ) * -sin(θ) + cosθ * cos(θ)) <br>
+      <sup>dy</sup>/<sub>dθ</sub> = 2 + 2(cos<sup>2</sup>>(θ) - sin<sup>2</sup>>(θ)) <br>
+      <sup>dy</sup>/<sub>dθ</sub> = 2(1 + cos<sup>2</sup>>(θ) - sin<sup>2</sup>>(θ)) <br>
+      </span>
 
-      here we'll replace 1 with cos<sup>2</sup>>(θ) + sin<sup>2</sup>>(θ)
+      here we'll replace 1 with cos<sup>2</sup>>(θ) + sin<sup>2</sup>>(θ) <br>
 
-      <sup>dy</sup>/<sub>dθ</sub> = 2(cos<sup>2</sup>>(θ) + sin<sup>2</sup>>(θ) + cos<sup>2</sup>>(θ) - sin<sup>2</sup>>(θ))
-      <sup>dy</sup>/<sub>dθ</sub> = 2(2cos<sup>2</sup>>(θ))
-      <sup>dy</sup>/<sub>dθ</sub> = 4cos<sup>2</sup>>(θ)
+      <span class = "equation">
+      <sup>dy</sup>/<sub>dθ</sub> = 2(cos<sup>2</sup>>(θ) + sin<sup>2</sup>>(θ) + cos<sup>2</sup>>(θ) - sin<sup>2</sup>>(θ)) <br>
+      <sup>dy</sup>/<sub>dθ</sub> = 2(2cos<sup>2</sup>>(θ)) <br>
+      <sup>dy</sup>/<sub>dθ</sub> = 4cos<sup>2</sup>>(θ) <br>
       
-      <sup>dy</sup>/<sub>dx</sub> = <sup>dy</sup>/<sub>dθ</sub> * dθ/dx
-      <sup>dy</sup>/<sub>dx</sub> = 4cos<sup>2</sup>>(θ) / 4sin(θ)cos(θ)
-      <sup>dy</sup>/<sub>dx</sub> = cot(θ)
+      <sup>dy</sup>/<sub>dx</sub> = <sup>dy</sup>/<sub>dθ</sub> * dθ/dx <br>
+      <sup>dy</sup>/<sub>dx</sub> = 4cos<sup>2</sup>>(θ) / 4sin(θ)cos(θ) <br>
+      <sup>dy</sup>/<sub>dx</sub> = cot(θ) <br>
+      </span>
 
 
 
@@ -163,28 +170,34 @@
   <!--Question 4: Logs-->
 
   <img src = "Q4.png" alt = "Solve the equation log(2x + 1) = 2 log(x + 1) − 1.">
-    <p> The first thing you should notice is that all of the terms escept for one are in logs.
-    To simplify problems like these, we can attempt to convert every term into log-based terms.
-    This is not always possible but 1 is a very convenient number because it is simply log 10. 
+    <p class = "explanation centre"> The first thing you should notice is that all of the terms escept for one are in logs. <br>
+    To simplify problems like these, we can attempt to convert every term into log-based terms. <br>
+    This is not always possible but 1 is a very convenient number because it is simply log 10. <br>
        
-    log(2x + 1) = 2log(x + 1) - 1
-    log(2x + 1) = 2log(x + 1) - log(10)
+    <span class = "equation">
+    log(2x + 1) = 2log(x + 1) - 1 <br>
+    log(2x + 1) = 2log(x + 1) - log(10) <br>
+    </span>
 
     now we can apply some log laws. We'll use the following:
-    Alog(B) = log(B<sup>A</sup>)
-    log(A) + log(B) = log(AB)
+    <span class = "equation">
+    
+    Alog(B) = log(B<sup>A</sup>) <br>
+    log(A) + log(B) = log(AB) <br>
 
-    log(2x + 1) + log(10) = log((x + 1)<sup>2</sup>>)
-    log(20x + 10) = log((x + 1)<sup>2</sup>>)
+    log(2x + 1) + log(10) = log((x + 1)<sup>2</sup>>) <br>
+    log(20x + 10) = log((x + 1)<sup>2</sup>>) <br>
+    </span>
 
-    because both sides now have only a singular log, we can completely remove it. 
-    Then it's a simple matter or rearranging and finding x with the quadratic formula.
+    because both sides now have only a singular log, we can completely remove it them. <br>
+    Then it's a simple matter or rearranging and finding x with the quadratic formula. <br>
 
-    20x + 10 = (x + 1)<sup>2</sup>>
-    20x + 10 = x<sup>2</sup>> + 2x + 1
-    x<sup>2</sup>> - 18x - 9 = 0
-    x = 9 ± 3√10
-
+    <span class = "equation">
+    20x + 10 = (x + 1)<sup>2</sup> <br>
+    20x + 10 = x<sup>2</sup>> + 2x + 1 <br>
+    x<sup>2</sup>> - 18x - 9 = 0 <br>
+    x = 9 ± 3√10 <br>
+    </span>
       
   
   </p>
@@ -196,50 +209,54 @@
     <img src="" alt = "√6*cos(θ) + 3sin(θ)">
 
 
-    <p>
-      The value of √6cos(θ) + 3sin(θ) will fluctuate from a minimum to a maximum,
-      depending on the angle θ. For every form of Acos(θ) + Bsin(θ), the value of θ which
-      will yield the maximum value will differ. For example, in 10cos(θ) - 10sin(θ), the max
-      value will be 10 when θ is 0 degrees, but in -10cos(θ) + 10sin(θ), the max value will
-      still be 10, but it will occur when θ is 180 degrees or π radians. 
+    <p class = "explanation">
+      The value of √6cos(θ) + 3sin(θ) will fluctuate from a minimum to a maximum, depending on the angle θ. <br>
+      For every form of Acos(θ) + Bsin(θ), the value of θ which will yield the maximum value will differ. <br>
+      For example, in 10cos(θ) - 10sin(θ), the max value will be 10 when θ is 0 degrees, but in -10cos(θ) + 10sin(θ), the max value will
+      still be 10, but it will occur when θ is 180 degrees or π radians. <br>
 
-      However, the one thing that will stay constant no matter the value of A and B is the 
-      max value. It will always be √(A<sup>2</sup>> + B<sup>2</sup>>). This is known as the modulus, or the hypotenuse of 
-      the triangle, or the length of the line. It's interesting but expected that the concept of
-      triangles would come up in a topic about angles. 
+      However, the one thing that will stay constant no matter the way to caclulate the max value. <br>
+      It will always be √(A<sup>2</sup>> + B<sup>2</sup>>). This is known as the modulus, or the hypotenuse of 
+      the triangle, or the length of the line. <br>
+      It's interesting but expected that the concept of triangles would come up in a topic about angles. <br>
 
       Notice that the question asks for the form Rcos(θ - α). R is the maximum value, and this expression
-      will fluctuate from -R to R depending on θ. α is a constant. α is the angle at which the max
-      value R will occur. If you noticed, at angle θ = α, the expression will become Rcos(0) which is 
-      simply R. 
+      will fluctuate from -R to R depending on θ. <br>
+       α is a constant. α is the angle at which the max value R will occur. <br>
+       If you noticed, at angle θ = α, the expression will become Rcos(0) which is simply R. <br>
 
-      Anyways on to the question;
+      Anyways on to the question; <br>
 
+      <span class = "equation">
       R = √(A<sup>2</sup> + B<sup>2</sup>)
       R = √(6 + 9)
       R = √15
+      </span>
 
-      We can now use the double angle formula to expand Rcos(θ - α)
+      We can now use the double angle formula to expand Rcos(θ - α) <br>
 
+      <span = class="equation">
       Rcos(θ - α) = R * (cos(θ)cos(α) + sin(θ)sin(α)) 
+      </span>
 
-      now we'll substitute in R and compare it to the provided expression:
+      now we'll substitute in R and compare it to the provided expression: <br>
       
-      √6cos(θ) + 3sin(θ) = √15 * (cos(θ)cos(α) + sin(θ)sin(α))
+      √6cos(θ) + 3sin(θ) = √15 * (cos(θ)cos(α) + sin(θ)sin(α)) <br>
 
-      From here, we'll substitute θ with very convenient values to get rid of some terms
-      so that we can find α. These values are 0 and 180 degrees (or 0 and π radians). 
-      Because the question mentions that 0 < α < 90, we'll use degrees instead of radians.
+      From here, we'll substitute θ with very convenient values to get rid of some terms so that we can find α. <br> 
+      These values are 0 and 180 degrees (or 0 and π radians). <br>
+      Because the question mentions that 0 < α < 90, we'll use degrees instead of radians. <br>
 
-      let θ =  180 deg;
-      sin(180) = 0 
-      cos(180) = 1
+      <span class = "equation">
+      let θ =  180 deg; <br>
+      sin(180) = 0 <br>
+      cos(180) = 1 <br>
 
-      3 + 0 = √15(0 + 1*sin(α))
-      3 = √15sin(α)
-      α = arcsin(3 / √15)
-      α = 0.886 rad or 50.77 degrees
-    
+      3 + 0 = √15(0 + 1*sin(α)) <br>
+      3 = √15sin(α) <br>
+      α = arcsin(3 / √15) <br>
+      α = 0.886 rad or 50.77 degrees <br>
+      </span>
 
 
     </p>
