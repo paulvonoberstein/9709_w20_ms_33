@@ -19,12 +19,20 @@
 
       .explanation {
         background-color: rgb(187, 255, 160);
-        color: white;
+        color: black;
         border: 2px solid black;
         margin: 20px;
         padding: 20px;
         
       } 
+
+      .centre {
+        margin: auto;
+        width: 50%;
+        border: 3px solid black;
+        padding: 10px;
+
+      }
         
       
 
@@ -44,7 +52,7 @@
     <img src = "Q1.png" alt = " Q1: Solve the inequality 2 - 5x > 2|x-3|">
     
     
-    <p class = "explanation"> The safest way to do this is to square both sides and use a number line to check your answer. Note that the modulus function
+    <p class = "explanation centre"> The safest way to do this is to square both sides and use a number line to check your answer. Note that the modulus function
     and the square function are similar in that they both invert negative values but leaves positive values alone.
     
     (2 - 5x)<sup>2</sup> > (2|x-3|)<sup>2</sup>
@@ -86,9 +94,9 @@
 
     <!--Question 3: Differentitation-->
     <img src = "" alt = "">
-    <p> We are given a definition for x and y and are asked to find <sup>dy</sup>%frasl;<sub>dx</sub>. Notice how both x and y share a common
-      variable θ. We can use this to link x and y. Find dx/dθ and <sup>dy</sup>%frasl;<sub>dθ</sub>, and then rearrange and multiply
-      to find <sup>dy</sup>%frasl;<sub>dx</sub>. 
+    <p> We are given a definition for x and y and are asked to find <sup>dy</sup>/<sub>dx</sub>. Notice how both x and y share a common
+      variable θ. We can use this to link x and y. Find dx/dθ and <sup>dy</sup>/<sub>dθ</sub>, and then rearrange and multiply
+      to find <sup>dy</sup>/<sub>dx</sub>. 
 
       Notice how both x and y have a double angle within their trig function. We can replace these with their 
       non-double equivalent to differentiate them more easily.
@@ -100,23 +108,23 @@
       <sup>dx</sup>> = 0 + 2 * 2sin(θ) * cos(θ)
       dx/dθ = 4sin(θ)cos(θ)
 
-      now we'll find <sup>dy</sup>%frasl;<sub>dθ</sub>
+      now we'll find <sup>dy</sup>/<sub>dθ</sub>
 
       y = 2θ + sin(2θ)
       y = 2θ + 2sin(θ)cos(θ)
       <sup>dy</sup> = 2 + 2(sin(θ) * -sin(θ) + cosθ * cos(θ))
-      <sup>dy</sup>%frasl;<sub>dθ</sub> = 2 + 2(cos<sup>2</sup>>(θ) - sin<sup>2</sup>>(θ))
-      <sup>dy</sup>%frasl;<sub>dθ</sub> = 2(1 + cos<sup>2</sup>>(θ) - sin<sup>2</sup>>(θ))
+      <sup>dy</sup>/<sub>dθ</sub> = 2 + 2(cos<sup>2</sup>>(θ) - sin<sup>2</sup>>(θ))
+      <sup>dy</sup>/<sub>dθ</sub> = 2(1 + cos<sup>2</sup>>(θ) - sin<sup>2</sup>>(θ))
 
       here we'll replace 1 with cos<sup>2</sup>>(θ) + sin<sup>2</sup>>(θ)
 
-      <sup>dy</sup>%frasl;<sub>dθ</sub> = 2(cos<sup>2</sup>>(θ) + sin<sup>2</sup>>(θ) + cos<sup>2</sup>>(θ) - sin<sup>2</sup>>(θ))
-      <sup>dy</sup>%frasl;<sub>dθ</sub> = 2(2cos<sup>2</sup>>(θ))
-      <sup>dy</sup>%frasl;<sub>dθ</sub> = 4cos<sup>2</sup>>(θ)
+      <sup>dy</sup>/<sub>dθ</sub> = 2(cos<sup>2</sup>>(θ) + sin<sup>2</sup>>(θ) + cos<sup>2</sup>>(θ) - sin<sup>2</sup>>(θ))
+      <sup>dy</sup>/<sub>dθ</sub> = 2(2cos<sup>2</sup>>(θ))
+      <sup>dy</sup>/<sub>dθ</sub> = 4cos<sup>2</sup>>(θ)
       
-      <sup>dy</sup>%frasl;<sub>dx</sub> = <sup>dy</sup>%frasl;<sub>dθ</sub> * dθ/dx
-      <sup>dy</sup>%frasl;<sub>dx</sub> = 4cos<sup>2</sup>>(θ) / 4sin(θ)cos(θ)
-      <sup>dy</sup>%frasl;<sub>dx</sub> = cot(θ)
+      <sup>dy</sup>/<sub>dx</sub> = <sup>dy</sup>/<sub>dθ</sub> * dθ/dx
+      <sup>dy</sup>/<sub>dx</sub> = 4cos<sup>2</sup>>(θ) / 4sin(θ)cos(θ)
+      <sup>dy</sup>/<sub>dx</sub> = cot(θ)
 
 
 
