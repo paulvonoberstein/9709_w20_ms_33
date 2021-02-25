@@ -218,7 +218,7 @@
     <img src="" alt = "√6cos(θ) + 3sin(θ)">
 
 
-    <p class = "explanation">
+    <p class = "explanation centre">
       The value of √6cos(θ) + 3sin(θ) will fluctuate from a minimum to a maximum, depending on the angle θ. <br>
       For every form of Acos(θ) + Bsin(θ), the value of θ which will yield the maximum value will differ. <br>
       For example, in 10cos(θ) - 10sin(θ), the max value will be 10 when θ is 0 degrees, but in -10cos(θ) + 10sin(θ), the max value will
@@ -324,7 +324,7 @@
 
     <!--Question 7A: Complex Numbers Factorisation-->
 
-    <p class = "explanation"> If you have a good calculator, you can actually find the squared and cubed
+    <p class = "explanation centre"> If you have a good calculator, you can actually find the squared and cubed
       functions of the complex number -1 + √5i, but you'll still have to show your working. <br>
 
       <span class = "equation">
@@ -366,7 +366,7 @@
     <!--Question 7B: Complex Numbers Factorisation part 2-->
     <div id = "Question_7"> 
 
-    <p class = "explanation">
+    <p class = "explanation centre">
       From the previous question, we know that one of the roots of the polynomial 2x<sup>3</sup> + x<sup>2</sup> + 6x - 18 = 0 is -1 + 5i. <br>
       In bracket form this is (x + 1 - 5i). Notice how A*B*(x + 1 - 5i) = 0, if we put x = -1 + 5i, the expression is true no matter what A or B is. <br>
       The polynomial does not equal to a so we can immediately tell that one of the other roots is the complement which is -1 - 5i, or (x + 1 + 5i) in brackets. <br>
@@ -393,7 +393,7 @@
   </div>
 
      <!--Question 8: Implicit Differentiation-->
-     <div id = "Question_8"></div>
+     <div id = "Question_8">
 
      <p class = "explanation centre"> If you look at the expression x <sup>dy</sup>/<sub>dx</sub> = (1 - 2x<sup>2</sup>)y, you'll
       notice that there is both a dy and a dx. This is a sign that this is an ODE (Ordinary Differential Equation). <br>
@@ -501,19 +501,78 @@
         <sup>(8 + 5x + 12x<sup>2</sup>)</sup>/<sub>(1 - x)(2 + 3x)<sup>2</sup></sub> = 
         <sup>1</sup>/<sub>(1 - x)</sub> + <sup>-1</sup>/<sub>(2 + 3x)</sub> + <sup>6</sup>/<sub>(2 + 3x<sup>2</sup>)</sub>
        </span>
-      
-
-
 
       </p>
 
+    
 
-    </div>
+    <!-- Question 9B: Expanding polynomial -->
+    
+    <p class = "explanation centre">
+
+      This is a relatively straightforward question worth a lot of free marks. <br>
+      Notice that all of the resultant terms of the partial fractions are simply in the form of A(Bx + C)<sup>D</sup>
+      where A, B, C and D are constants, while D in these cases are negative. <br>
+      Therefore, we can just flip over to the formula book and apply the binomial expansion formula. <br>
+      You can infinitely expand the terms to get increasingly accurate approximation(s) however the question only asks
+      for the first three terms; constant, x and x<sup>2</sup>. <br>
+       I recommend converting every bracket into the form A(1 + Bx)<sup>n</sup>, where A and B are constants before
+      expanding. This will minimize silly mistakes.<br>
+      Just remember that when you "take away" a number z from inside the brackets, you have to multiply the coefficient by
+      z<sup>n</sup>, where n is the power of the brackets. <br>
+
+      <span class = "equation">
+
+        1(1 - x)<sup>-1</sup> - 1(2 + 3x)<sup>-1</sup> + 6(2 + 3x)<sup>-2</sup> <br>
+
+        (1 - x)<sup>-1</sup> = 1 - x + x<sup>2</sup> <br>
+
+        -1(2 + 3x)<sup>-1</sup> = -1 * (2)<sup>-1</sup> * (1 + <sup>3</sup>/<sub>2</sub>x)<sup>-1</sup> <br>
+        -1(2 + 3x)<sup>-1</sup> = <sup>-1</sup>/<sub>2</sub> * (1 - <sup>3</sup>/<sub>2</sub>x) - <sup>5</sup>/<sub>2</sub>x<sup>2</sup>) <br>
+        -1(2 + 3x)<sup>-1</sup> = <sup>-1</sup>/<sub>2</sub> - <sup>3</sup>/<sub>4</sub>x - <sup>9</sup>/<sub></sub>8x<sup>2</sup> <br>
+        
+        6(2 + 3x)<sup>-2</sup> = <sup>3</sup>/<sub>2</sub> (1 - 3x + <sup>27</sup>/<sub>4</sub>x<sup>2</sup>) <br>
+        6(2 + 3x)<sup>-2</sup> = <sup>3</sup>/<sub>2</sub> - <sup>9</sup>/<sub>2</sub>x<sup>2</sup> + <sup>81</sup>/<sub>8</sub>x<sup>2</sup> <br>
+        
+
+      </span>
+      Now we can group each type of terms to find the constant, x and x<sup>2</sup> terms. <br>
+      <span class = "equation">
+
+        1(1 - x)<sup>-1</sup> - 1(2 + 3x)<sup>-1</sup> + 6(2 + 3x)<sup>-2</sup> = (1 - <sup>1</sup>/<sub>2</sub> + <sup>3</sup>/<sub>2</sub>)
+         + (1 - <sup>3</sup>/<sub>4</sub> - <sup>9</sup>/<sub>2</sub>)x
+         + (1 - <sup>9</sup>/<sub>8</sub> + <sup>81</sup>/<sub>8</sub>)x<sup>2</sup> <br>
+
+        1(1 - x)<sup>-1</sup> - 1(2 + 3x)<sup>-1</sup> + 6(2 + 3x)<sup>-2</sup> = 2 - <sup>11</sup>/<sub>4</sub>x + 10x<sup>2</sup> <br>
 
 
+      </span>
 
-  
+    </p>
+
+</div>
+<!-- Question 10A: Differentiation & Stationary Point -->
+<div class = "Question_10">
+<p class = "equation centre">
+As shown by the graph, M is a stationary point. If you forgot, a stationary point is the point on a graph where
+the gradient is 0. <br> If you draw a tangent at the stationary point, you'll have a straight horizontal line. <br>
+To find the x value of the stationary point for a function y = f(x), we need to find the x value when <sup>dy</sup>/<sub>dx</sub> = 0. <br>
+So let's differentiate the function and find it. We'll use the formula in the formula book.<br>
+
+<span class = "equation">
+ derivative of uv = uv' + vu' <br>
+ u = (2 - x)     u' = -1 <br>
+ v = e<sup><sup>-1</sup>/<sub>2</sub>x</sup>     v' = <sup>-1</sup>/<sub>2</sub>e<sup><sup>-1</sup>/<sub>2</sub>x</sup>
+
+ y = (2 - x)e<sup><sup>-1</sup>/<sub>2</sub>x</sup>
+ <sup>dy</sup>/<sub>dx</sub> = (2 - x)
+
+
+</span>
+
+</p>
   </div>
+  </div> <!-- Main Div -->
 </body>
 </html>
     
