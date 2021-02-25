@@ -64,7 +64,7 @@
     <p>Note: √9cos(50) means root 9, multiplied by cos 50, while √(9cos(50)) means root 9*cos(50)</p>
 
     <!-- Question 1: Modulus -->
-    
+    <div id = "Question_1">
     <img src = "Q1.png" alt = " Q1: Solve the inequality 2 - 5x > 2|x-3|">
     
     
@@ -102,9 +102,10 @@
     
     </p>
     
+  </div>
 
     <!-- Question 2: Complex Number Argand Diagram-->
-
+  <div id = "Question_2">
     <img src = "" alt = "">
 
     <p class = "explanation centre"> For the next question, you'll have to draw an Argand diagram. <br>
@@ -123,10 +124,12 @@
      equation are the values of z that satisfy both |z| ≥ 2 and |z - 1 + i| ≤ 1.  
     </p>
 
+  </div>
 
     <!--Question 3: Differentitation-->
+    <div id = "Question 3">
     <img src = "" alt = "">
-    <p class = "equation centre"> We are given a definition for x and y and are asked to find <sup>dy</sup>/<sub>dx</sub>. <br>
+    <p class = "explanation centre"> We are given a definition for x and y and are asked to find <sup>dy</sup>/<sub>dx</sub>. <br>
        Notice how both x and y share a common variable θ. We can use this to link x and y. <br>
       If we find <sup>dx</sup>/<sub>dθ</sub> and <sup>dy</sup>/<sub>dθ</sub>, we can then rearrange them and multiply
       to find <sup>dy</sup>/<sub>dx</sub>. <br>
@@ -143,7 +146,7 @@
       <sup>dx</sup>/<sub>dθ</sub> = 4sin(θ)cos(θ) <br>
       </span>
 
-      now we'll find <sup>dy</sup>/<sub>dθ</sub>
+      now we'll find <sup>dy</sup>/<sub>dθ</sub> <br>
 
       <span class = "equation">
       y = 2θ + sin(2θ) <br>
@@ -168,7 +171,11 @@
 
 
     </p>
+  </div>
+
   <!--Question 4: Logs-->
+
+  <div id = "Question_4">
 
   <img src = "Q4.png" alt = "Solve the equation log(2x + 1) = 2 log(x + 1) − 1.">
     <p class = "explanation centre"> The first thing you should notice is that all of the terms escept for one are in logs. <br>
@@ -202,11 +209,12 @@
       
   
   </p>
+</div>
     <!-- Question 5: Placeholder-->
 
 
     <!-- Question 6a: Double Angles -->
-
+<div id = "Question_6">
     <img src="" alt = "√6cos(θ) + 3sin(θ)">
 
 
@@ -263,10 +271,11 @@
 
 
     </p>
-
+  
     <!--Question 6B: Using the Formula-->
+    
 
-    <p class = "equation">
+    <p class = "explanation centre">
 
       we can use the formula we made from 6A to solve this problem. <br>
       However, we'll remove all the additional components attached to the angle θ to simplify the expression. <br>
@@ -351,10 +360,11 @@
           0 + 0i = 0 <br>
         </span>
 
-
     </p>
+  </div>
 
     <!--Question 7B: Complex Numbers Factorisation part 2-->
+    <div id = "Question_7"> 
 
     <p class = "explanation">
       From the previous question, we know that one of the roots of the polynomial 2x<sup>3</sup> + x<sup>2</sup> + 6x - 18 = 0 is -1 + 5i. <br>
@@ -364,12 +374,144 @@
 
       <span class = "equation">
 
-       (x + 1 - √5i)(x - 1 - √5i)(A) = 2x<sup>3</sup> + x<sup>2</sup> + 6x - 18
-       
+       (x + 1 - √5i)(x - 1 - √5i)(A) = 2x<sup>3</sup> + x<sup>2</sup> + 6x - 18 <br>
+       (x + 1 - √5i)(x - 1 - √5i)(A) = 2x<sup>3</sup> + x<sup>2</sup> + 6x - 18 <br>
+
+      </span>
+
+      We'll now expand and organize the terms according to their x powers and i.
+
+      <span class = "equation"></span>
+
+       A(x<sup>2</sup> - x -√5ix + x - 1 - √5i - √5ix + √5i + 5i<sup>2</sup>) = 2x<sup>3</sup> + x<sup>2</sup> + 6x - 18 <br>
+       x<sup>2</sup> + (x + x) + 1 + (√5 - √5)ix + (√5 - √5)i = 2x<sup>3</sup> + x<sup>2</sup> + 6x - 18 <br>
+       x<sup>2</sup> + 2x + 6 + 0ix + 0i = 2x<sup>3</sup> + x<sup>2</sup> + 6x - 18 <br>
 
       </span>
 
     </p>
+  </div>
+
+     <!--Question 8: Implicit Differentiation-->
+     <div id = "Question_8"></div>
+
+     <p class = "explanation centre"> If you look at the expression x <sup>dy</sup>/<sub>dx</sub> = (1 - 2x<sup>2</sup>)y, you'll
+      notice that there is both a dy and a dx. This is a sign that this is an ODE (Ordinary Differential Equation). <br>
+      The very first thing we should do to intergrate this expression is to rearrange it so that all the x and y are separated. <br>
+      If we do this, we'll get: <br>
+
+      <span class = "equation">
+        ∫<sup>1</sup>/<sub>y</sub>.dy = ∫<sup>(1-2x<sup>2</sup>)</sup>/<sub>x</sub> <br>
+        ∫<sup>1</sup>/<sub>y</sub>.dy = ∫<sup>1</sup>/<sub>x</sub>.dx - ∫2x.dx <br>
+      </span>
+
+      In this form, we can easily just integrate the three terms separately. <br>
+      Remember that ∫<sup>A</sup>/<sub>∫A.dA</sub> evaluates to lnA. eg ∫<sup>1</sup>/<sub>A</sub>.dA will always
+      be lnA since any constant A will differentiate into 1.
+
+      <span class = "equation">
+
+      ln(y) = ln(x) - x<sup>2</sup> <br> + c
+      </span>
+
+      Technically, there are two constants on both sides of the equal sign, but we can just merge them together
+      into a single constant c. We can keep use log laws to rearrange this expression into:
+
+      <span class = "equation">
+        e<sup>(-x<sup>2</sup> + c)</sup> = <sup>y</sup>/<sub>x</sub> <br>
+        xe<sup>(-x<sup>2</sup> + c)</sup> = y <br>
+
+
+      </span>
+
+      However I recommend NOT doing this until you find the constant c because it's a lot more difficult to work with 
+      exponentials than log or ln. <br>
+      We are provided that y = 1 when x = 1, so we'll substitute in to find c. <br>
+
+      <span class = "equation">
+        ln(1) = ln(1) - 1 + c <br>
+        ln(1) - ln(1) + 1 = c <br>
+        c = 1 <br>
+      </span>
+
+      so the final expression for y is:
+
+      <span class="equation">
+        xe<sup>(1 - x<sup>2</sup>)</sup> = y <br>
+      </span>
+      
+
+     </p>
+    </div>
+
+    <!--Question 9A: Partial Fractions-->
+    <div class = "Question 9">
+      <p class = "explanation centre">
+        This is a simple partial fractions question. As you can see from the numerator, there are a total
+       of three factors; (1 - x), (2 + 3x) and (2 + 3x)<sup>2</sup>. <br>
+       If you are wondering why (2 + 3x) and (2 + 3x)<sup>2</sup> are separate factors, think of the number
+       18. 18's PRIME factors are 2, 3 and 3. However, 6 and 9 are also factors of 18. <br>
+       Remember that 1 is not usually considered to be a factor, so we can ignore 1 and 18 as factors of 18. <br>
+       
+       So we'll setup our answer: <br>
+
+       <span class = "equation">
+
+        <sup>(8 + 5x + 12x<sup>2</sup>)</sup>/<sub>(1 - x)(2 + 3x)<sup>2</sup></sub> = 
+        <sup>A</sup>/<sub>(1 - x)</sub> + <sup>B</sup>/<sub>(2 + 3x)</sub> + <sup>C</sup>/<sub>(2 + 3x<sup>2</sup>)</sub> <br>
+
+       </span>
+
+       Remember that we only put Ax + B as the numerator when the form of the denominator is (x<sup>2</sup> + K) where K is a constant. <br>
+       Now, we can eliminate all denominators by multiplying everything by: <br>
+
+       <span class = "equation">
+
+        (8 + 5x + 12x<sup>2</sup>) = A(2 + 3x)<sup>2</sup> + B(2 + 3x)(1 - x) + C(1 - x) <br>
+
+       </span>
+
+       We can substitute x = <sup>-2</sup>/<sub>3</sub> and x = 1 to remove the first and second, then the second
+       and third terms respectively to find A and C. Then we can use x = 0 to find B. <br>
+       You can actually use any value of x to find B, but 0 is the most convenient number to use because it 
+       replaces all x-terms with 0. <br>
+
+       <span class = "equation">
+        x = <sup>-2</sup>/<sub>3</sub> <br>
+        (8 + 5(<sup>-2</sup>/<sub>3</sub>) + 12(<sup>-2</sup>/<sub>3</sub><sup>2</sup>) = C(1 - <sup>-2</sup>/<sub>3</sub>)
+        10 = <sup>5</sup>/<sub>3</sub>C
+        C = 6 <br>
+
+        x = 1 <br>
+        (8 + 5(1) + 12(1)<sup>2</sup>) = A(2(1) + 3)<sup>2</sup> <br>
+        25 = 25A <br>
+        A = 1 <br>
+
+        x = 0 <br>
+        8 = 4A + 2B + C <br>
+        8 = 4 + 2B + 6 <br>
+        -2 = 2B <br>
+        B = -1 <br>
+
+       </span>
+
+       Now the question is as easy as ABC. <br>
+
+       <span class="equation">
+        <sup>(8 + 5x + 12x<sup>2</sup>)</sup>/<sub>(1 - x)(2 + 3x)<sup>2</sup></sub> = 
+        <sup>1</sup>/<sub>(1 - x)</sub> + <sup>-1</sup>/<sub>(2 + 3x)</sub> + <sup>6</sup>/<sub>(2 + 3x<sup>2</sup>)</sub>
+       </span>
+      
+
+
+
+      </p>
+
+
+    </div>
+
+
+
   
   </div>
 </body>
