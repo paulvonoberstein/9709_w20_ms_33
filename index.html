@@ -49,25 +49,16 @@
     
 <body>
   <div class = "background">
-
-    <audio>
-      <source src="skies_of_love.mp3"></source>
-    </audio>
-
-
-  <form action = "upload.php" method = "POST" enctype= "multipart/form-data">
-  <input type ="file" name = "file">
-    <button type = "submit" name = "submit">UPLOAD</button>
     
 
     <p>Note: √9cos(50) means root 9, multiplied by cos 50, while √(9cos(50)) means root 9*cos(50)</p>
 
     <!-- Question 1: Modulus -->
-    <div id = "Question_1">
-    <img src = "Q1.png" alt = " Q1: Solve the inequality 2 - 5x > 2|x-3|">
-    
-    
-    <p class = "explanation centre"> The safest way to do this question is to square both sides and use a number line to check your answer. <br>
+>
+<img src = "Q1.png" alt = " Q1: Solve the inequality 2 - 5x > 2|x-3|">
+<button onclick="myFunction()">Reveal Answer</button>
+<div id = "answer"> 
+<p class = "explanation centre"> The safest way to do this question is to square both sides and use a number line to check your answer. <br>
        Note that the modulus function and the square function are similar in that they both invert negative values but leaves positive values alone.<br>
 
     <span class = "equation">
@@ -99,15 +90,14 @@
     but when x = 0, the expression evaluates to -32, which is not > 0. <br>
     Hence, the answer is x <sup>-4</sup>/<sub>3</sub> and x > <sup>8</sup>/<sub>7</sub>. <br>
     
-    </p>
-    
-  </div>
+</p> 
+</div>
 
-    <!-- Question 2: Complex Number Argand Diagram-->
-  <div id = "Question_2">
-    <img src = "" alt = "">
-
-    <p class = "explanation centre"> For the next question, you'll have to draw an Argand diagram. <br>
+    <!-- Question 2: Complex Number Argand Diagram-->>
+<img src = "" alt = "">
+<button onclick="myFunction()">Reveal Answer</button>
+<div id = "answer">
+<p class = "explanation centre"> For the next question, you'll have to draw an Argand diagram. <br>
       An Argand diagram is just a fancy name for a graph with a real x axis and an imaginary y axis. <br>
       The first of the equation <span class="equation">|z| ≥ 2</span> means the modulus of the complex number z is 2. The modulus is like the magnitude of the line drawn from the 
       origin to the complex number z. <br>
@@ -121,14 +111,15 @@
      Then, draw a dashed line circle with radius 1 and shade everything within the circle. <br>
      The overlapping shaded regions of the first and second
      equation are the values of z that satisfy both |z| ≥ 2 and |z - 1 + i| ≤ 1.  
-    </p>
-
-  </div>
+</p>
+</div>
 
     <!--Question 3: Differentitation-->
-    <div id = "Question 3">
-    <img src = "" alt = "">
-    <p class = "explanation centre"> We are given a definition for x and y and are asked to find <sup>dy</sup>/<sub>dx</sub>. <br>
+
+<img src = "" alt = "">
+<button onclick="myFunction()">Reveal Answer</button>
+<div id = "answer"> 
+<p class = "explanation centre"> We are given a definition for x and y and are asked to find <sup>dy</sup>/<sub>dx</sub>. <br>
        Notice how both x and y share a common variable θ. We can use this to link x and y. <br>
       If we find <sup>dx</sup>/<sub>dθ</sub> and <sup>dy</sup>/<sub>dθ</sub>, we can then rearrange them and multiply
       to find <sup>dy</sup>/<sub>dx</sub>. <br>
@@ -167,17 +158,15 @@
       <sup>dy</sup>/<sub>dx</sub> = cot(θ) <br>
       </span>
 
-
-
-    </p>
-  </div>
+</p>
+</div>
 
   <!--Question 4: Logs-->
 
-  <div id = "Question_4">
-
-  <img src = "Q4.png" alt = "Solve the equation log(2x + 1) = 2 log(x + 1) − 1.">
-    <p class = "explanation centre"> The first thing you should notice is that all of the terms escept for one are in logs. <br>
+<img src = "" alt = "">
+<button onclick="myFunction()">Reveal Answer</button>
+<div id = "answer"> 
+<p class = "explanation centre"> The first thing you should notice is that all of the terms escept for one are in logs. <br>
     To simplify problems like these, we can attempt to convert every term into log-based terms. <br>
     This is not always possible but 1 is a very convenient number because it is simply log 10. <br>
        
@@ -207,17 +196,16 @@
     </span>
       
   
-  </p>
+</p>
 </div>
     <!-- Question 5: Placeholder-->
 
 
     <!-- Question 6a: Double Angles -->
-<div id = "Question_6">
-    <img src="" alt = "√6cos(θ) + 3sin(θ)">
-
-
-    <p class = "explanation centre">
+<div id = "answer">
+<img src="" alt = "√6cos(θ) + 3sin(θ)">
+<button onclick="myFunction()">Reveal Answer</button>
+<p class = "explanation centre">
       The value of √6cos(θ) + 3sin(θ) will fluctuate from a minimum to a maximum, depending on the angle θ. <br>
       For every form of Acos(θ) + Bsin(θ), the value of θ which will yield the maximum value will differ. <br>
       For example, in 10cos(θ) - 10sin(θ), the max value will be 10 when θ is 0 degrees, but in -10cos(θ) + 10sin(θ), the max value will
@@ -269,12 +257,14 @@
       </span>
 
 
-    </p>
-  
-    <!--Question 6B: Using the Formula-->
-    
+</p>
+</div>
 
-    <p class = "explanation centre">
+    <!--Question 6B: Using the Formula-->
+<img src = "" alt = "">
+<button onclick="myFunction()">Reveal Answer</button>
+<div id = "answer">
+<p class = "explanation centre">
 
       we can use the formula we made from 6A to solve this problem. <br>
       However, we'll remove all the additional components attached to the angle θ to simplify the expression. <br>
@@ -319,11 +309,14 @@
         √6cos(θ) + 3sin(θ) = 2.5 <br>
 
 
-    </p>
+</p>
+</div>
 
     <!--Question 7A: Complex Numbers Factorisation-->
-
-    <p class = "explanation centre"> If you have a good calculator, you can actually find the squared and cubed
+<img src = "" alt = "">
+<button onclick="myFunction()">Reveal Answer</button>
+<div id = "answer"> 
+<p class = "explanation centre"> If you have a good calculator, you can actually find the squared and cubed
       functions of the complex number -1 + √5i, but you'll still have to show your working. <br>
 
       <span class = "equation">
@@ -359,13 +352,14 @@
           0 + 0i = 0 <br>
         </span>
 
-    </p>
-  </div>
+</p>
+</div>
 
     <!--Question 7B: Complex Numbers Factorisation part 2-->
-    <div id = "Question_7"> 
-
-    <p class = "explanation centre">
+<img src = "" alt = "">
+<button onclick="myFunction()">Reveal Answer</button>
+<div id = "answer"> 
+<p class = "explanation centre">
       From the previous question, we know that one of the roots of the polynomial 2x<sup>3</sup> + x<sup>2</sup> + 6x - 18 = 0 is -1 + 5i. <br>
       In bracket form this is (x + 1 - 5i). Notice how A*B*(x + 1 - 5i) = 0, if we put x = -1 + 5i, the expression is true no matter what A or B is. <br>
       The polynomial does not equal to a so we can immediately tell that one of the other roots is the complement which is -1 - 5i, or (x + 1 + 5i) in brackets. <br>
@@ -387,14 +381,14 @@
        x<sup>2</sup> + 2x + 6 + 0ix + 0i = 2x<sup>3</sup> + x<sup>2</sup> + 6x - 18 <br>
 
       </span>
-
-    </p>
-  </div>
+</p>
+</div>
 
      <!--Question 8: Implicit Differentiation-->
-     <div id = "Question_8">
-
-     <p class = "explanation centre"> If you look at the expression x <sup>dy</sup>/<sub>dx</sub> = (1 - 2x<sup>2</sup>)y, you'll
+<img src = "" alt = "">
+<button onclick="myFunction()">Reveal Answer</button>
+<div id = "answer"> 
+<p class = "explanation centre"> If you look at the expression x <sup>dy</sup>/<sub>dx</sub> = (1 - 2x<sup>2</sup>)y, you'll
       notice that there is both a dy and a dx. This is a sign that this is an ODE (Ordinary Differential Equation). <br>
       The very first thing we should do to intergrate this expression is to rearrange it so that all the x and y are separated. <br>
       If we do this, we'll get: <br>
@@ -440,12 +434,14 @@
       </span>
       
 
-     </p>
-    </div>
+</p>
+</div>
 
     <!--Question 9A: Partial Fractions-->
-    <div class = "Question 9">
-      <p class = "explanation centre">
+<img src = "" alt = "">
+<button onclick="myFunction()">Reveal Answer</button>
+<div id = "answer"> 
+<p class = "explanation centre">
         This is a simple partial fractions question. As you can see from the numerator, there are a total
        of three factors; (1 - x), (2 + 3x) and (2 + 3x)<sup>2</sup>. <br>
        If you are wondering why (2 + 3x) and (2 + 3x)<sup>2</sup> are separate factors, think of the number
@@ -501,13 +497,15 @@
         <sup>1</sup>/<sub>(1 - x)</sub> + <sup>-1</sup>/<sub>(2 + 3x)</sub> + <sup>6</sup>/<sub>(2 + 3x<sup>2</sup>)</sub>
        </span>
 
-      </p>
-
-    
+</p>
+</div>
 
     <!-- Question 9B: Expanding polynomial -->
     
-    <p class = "explanation centre">
+<img src = "" alt = "">
+<button onclick="myFunction()">Reveal Answer</button>
+<div id = "answer"> 
+<p class = "explanation centre">
 
       This is a relatively straightforward question worth a lot of free marks. <br>
       Notice that all of the resultant terms of the partial fractions are simply in the form of A(Bx + C)<sup>D</sup>
@@ -547,53 +545,58 @@
 
       </span>
 
-    </p>
-
+</p>
 </div>
+
 <!-- Question 10A: Differentiation & Stationary Point -->
-<div class = "Question_10">
+<img src = "" alt = "">
+<button onclick="myFunction()">Reveal Answer</button>
+<div id = "answer"> 
 <p class = "equation centre">
-As shown by the graph, M is a stationary point. If you forgot, a stationary point is the point on a graph where
-the gradient is 0. <br> If you draw a tangent at the stationary point, you'll have a straight horizontal line. <br>
-To find the x value of the stationary point for a function y = f(x), we need to find the x value when <sup>dy</sup>/<sub>dx</sub> = 0. <br>
-So let's differentiate the function and find it. We'll use the formula in the formula book.<br>
+    As shown by the graph, M is a stationary point. If you forgot, a stationary point is the point on a graph where
+    the gradient is 0. <br> If you draw a tangent at the stationary point, you'll have a straight horizontal line. <br>
+    To find the x value of the stationary point for a function y = f(x), we need to find the x value when <sup>dy</sup>/<sub>dx</sub> = 0. <br>
+    So let's differentiate the function and find it. We'll use the formula in the formula book.<br>
 
-<span class = "equation">
- derivative of uv = uv' + vu' <br>
- u = (2 - x)     u' = -1 <br>
- v = e<sup><sup>-1</sup>/<sub>2</sub>x</sup>     v' = <sup>-1</sup>/<sub>2</sub>e<sup><sup>-1</sup>/<sub>2</sub>x</sup>
+    <span class = "equation">
+    derivative of uv = uv' + vu' <br>
+    u = (2 - x)     u' = -1 <br>
+    v = e<sup><sup>-1</sup>/<sub>2</sub>x</sup>     v' = <sup>-1</sup>/<sub>2</sub>e<sup><sup>-1</sup>/<sub>2</sub>x</sup>
 
- y = (2 - x)e<sup><sup>-1</sup>/<sub>2</sub>x</sup>
- <sup>dy</sup>/<sub>dx</sub> = (2 - x)*<sup>-1</sup>/<sub>2</sub>e<sup><sup>-1</sup>/<sub>2</sub>x</sup> -1*e<sup><sup>-1</sup>/<sub>2</sub>x</sup>  <br>
- <sup>dy</sup>/<sub>dx</sub> = -e<sup><sup>-1</sup>/<sub>2</sub>x</sup> - e<sup><sup>-1</sup>/<sub>2</sub>x</sup> + <sup>1</sup>/<sub>2</sub>xe<sup><sup>-1</sup>/<sub>2</sub>x</sup> <br>
- <sup>dy</sup>/<sub>dx</sub> = -2e<sup><sup>-1</sup>/<sub>2</sub>x</sup> + <sup>1</sup>/<sub>2</sub>xe<sup><sup>-1</sup>/<sub>2</sub>x</sup>
- <sup>dy</sup>/<sub>dx</sub> = e<sup><sup>-1</sup>/<sub>2</sub>x</sup>(<sup>1</sup>/<sub>2</sub>x - 2) <br>
+    y = (2 - x)e<sup><sup>-1</sup>/<sub>2</sub>x</sup>
+    <sup>dy</sup>/<sub>dx</sub> = (2 - x)*<sup>-1</sup>/<sub>2</sub>e<sup><sup>-1</sup>/<sub>2</sub>x</sup> -1*e<sup><sup>-1</sup>/<sub>2</sub>x</sup>  <br>
+    <sup>dy</sup>/<sub>dx</sub> = -e<sup><sup>-1</sup>/<sub>2</sub>x</sup> - e<sup><sup>-1</sup>/<sub>2</sub>x</sup> + <sup>1</sup>/<sub>2</sub>xe<sup><sup>-1</sup>/<sub>2</sub>x</sup> <br>
+    <sup>dy</sup>/<sub>dx</sub> = -2e<sup><sup>-1</sup>/<sub>2</sub>x</sup> + <sup>1</sup>/<sub>2</sub>xe<sup><sup>-1</sup>/<sub>2</sub>x</sup>
+    <sup>dy</sup>/<sub>dx</sub> = e<sup><sup>-1</sup>/<sub>2</sub>x</sup>(<sup>1</sup>/<sub>2</sub>x - 2) <br>
 
 
-</span>
-Now we can equate this expression to 0 to find the x-coordinate of the stationary point M.
+    </span>
+    Now we can equate this expression to 0 to find the x-coordinate of the stationary point M.
 
-<span class = "equation">
-  e<sup><sup>-1</sup>/<sub>2</sub>x</sup>(<sup>1</sup>/<sub>2</sub>x - 2) = 0 <br>
-  (<sup>1</sup>/<sub>2</sub>x - 2) = 0 <br>
-  (<sup>1</sup>/<sub>2</sub>x = 2 <br>
-  x = 4 <br>
+    <span class = "equation">
+    e<sup><sup>-1</sup>/<sub>2</sub>x</sup>(<sup>1</sup>/<sub>2</sub>x - 2) = 0 <br>
+    (<sup>1</sup>/<sub>2</sub>x - 2) = 0 <br>
+    (<sup>1</sup>/<sub>2</sub>x = 2 <br>
+    x = 4 <br>
 
-</span>
+    </span>
 
-Remember to also calculate the y-coordinate <br>
+    Remember to also calculate the y-coordinate <br>
 
-<span class = "equation">
-  x = 4 <br>
-  y = (2 - x)e<sup><sup>-1</sup>/<sub>2</sub>x</sup> <br>
-  y = e<sup><sup>-1</sup>/<sub>2</sub>4</sup> <br>
-  y = -2e<sup><sup>-1</sup>/<sub>2</sub>x</sup> <br>
-</span>
+    <span class = "equation">
+    x = 4 <br>
+    y = (2 - x)e<sup><sup>-1</sup>/<sub>2</sub>x</sup> <br>
+    y = e<sup><sup>-1</sup>/<sub>2</sub>4</sup> <br>
+    y = -2e<sup><sup>-1</sup>/<sub>2</sub>x</sup> <br>
+    </span>
 
 </p>
+</div>
 
 <!--Question 10B: Area under graph-->
-
+<img src = "" alt = "">
+<button onclick="myFunction()">Reveal Answer</button>
+<div id = "answer"> 
 <p class = "explanation centre">
   To find the shaded area under curve, first we need to know the limits, ie the x values of the shaded region. <br>
   From the graph itself, we can tell that the first x value is 0, while the second one is when y = 0. <br>
@@ -662,33 +665,36 @@ While the three equations for the second line are: <br>
 Now we can just equate i, j and k with each other. We start by finding either ƛ or μ, then we can find a. <br>
 
 <span class = "equation">
-  1 + aƛ = 2 + 2μ <br>
-  2 + 2ƛ = 1  - μ <br>
-  1 - ƛ = -1 + μ <br>
+    1 + aƛ = 2 + 2μ <br>
+    2 + 2ƛ = 1  - μ <br>
+    1 - ƛ = -1 + μ <br>
 
-  μ = 2 - ƛ <br>
+    μ = 2 - ƛ <br>
 
-  2 + 2ƛ = 1 - (2 - ƛ) <br>
-  2 + 2ƛ = -1 + ƛ <br>
-  ƛ = -3 <br>
+    2 + 2ƛ = 1 - (2 - ƛ) <br>
+    2 + 2ƛ = -1 + ƛ <br>
+    ƛ = -3 <br>
 
-  μ = 2 - (-3) <br>
-  μ = 5 <br>
+    μ = 2 - (-3) <br>
+    μ = 5 <br>
 
-  1 + a(-3) = 2 + 2(5) <br>
-  1 - 3a = 2 + 10 <br>
-  -3a = 11 <br>
-  a = <sup>11</sup>/<sub>-3</sub> <br>
+    1 + a(-3) = 2 + 2(5) <br>
+    1 - 3a = 2 + 10 <br>
+    -3a = 11 <br>
+    a = <sup>11</sup>/<sub>-3</sub> <br>
 
-</span> 
+    </span> 
 </p>
+</div>
 
 <!--Question 11B: Vector angles -->
-
+<img src = "" alt = "">
+<button onclick="myFunction()">Reveal Answer</button>
+<div id = "answer"> 
 <p class = "explanation centre"> This exam ends with a free 6 marks. We can simply use the formula in the booklet
   to find the value of a. <br>
   The a and b we are interested in are the functional second part of the line vector, not the starting position of the line. <br>
-  So the (ai + 2j - k) and (2i - j + k).
+  
 
 
   <span class = "equation">
@@ -714,20 +720,33 @@ Now we can just equate i, j and k with each other. We start by finding either ƛ
     a = <sup>49</sup>/<sub>32</sub> or 1 <br>
   </span>
 
-
-
 </p>
+</div>
 
 
 
 
+</div> <!-- Background Div -->
+
+    
+<!-- Start of JavaScript -->
+<script>
+
+
+function myFunction() {
+  var x = document.getElementById("answer");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
 
 
+</script>
 
 
-  </div> <!-- Main Div -->
+
 </body>
 </html>
-    
-    
