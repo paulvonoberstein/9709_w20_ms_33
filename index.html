@@ -31,7 +31,6 @@
         margin: 20px;
         padding: 20px;
         
-        
       } 
 
       .centre {
@@ -336,10 +335,10 @@
         x<sup>2</sup> = -4 - 2√5i <br>
 
         x<sup>3</sup> = x<sup>2</sup> * x <br>
-        x<sup>3</sup> = (-4 - 2√5i)(-1 + √5i)
-        x<sup>3</sup> = 4 - 4√5i + 2√5i - 2(5)i<sup>2</sup>
-        x<sup>3</sup> = 4 + 1- - 2√5i
-        x<sup>3</sup> = 14 - 2√5i
+        x<sup>3</sup> = (-4 - 2√5i)(-1 + √5i) <br>
+        x<sup>3</sup> = 4 - 4√5i + 2√5i - 2(5)i<sup>2</sup> <br>
+        x<sup>3</sup> = 4 + 10 - 2√5i <br>
+        x<sup>3</sup> = 14 - 2√5i <br>
 
       </span>
 
@@ -565,13 +564,168 @@ So let's differentiate the function and find it. We'll use the formula in the fo
  v = e<sup><sup>-1</sup>/<sub>2</sub>x</sup>     v' = <sup>-1</sup>/<sub>2</sub>e<sup><sup>-1</sup>/<sub>2</sub>x</sup>
 
  y = (2 - x)e<sup><sup>-1</sup>/<sub>2</sub>x</sup>
- <sup>dy</sup>/<sub>dx</sub> = (2 - x)
+ <sup>dy</sup>/<sub>dx</sub> = (2 - x)*<sup>-1</sup>/<sub>2</sub>e<sup><sup>-1</sup>/<sub>2</sub>x</sup> -1*e<sup><sup>-1</sup>/<sub>2</sub>x</sup>  <br>
+ <sup>dy</sup>/<sub>dx</sub> = -e<sup><sup>-1</sup>/<sub>2</sub>x</sup> - e<sup><sup>-1</sup>/<sub>2</sub>x</sup> + <sup>1</sup>/<sub>2</sub>xe<sup><sup>-1</sup>/<sub>2</sub>x</sup> <br>
+ <sup>dy</sup>/<sub>dx</sub> = -2e<sup><sup>-1</sup>/<sub>2</sub>x</sup> + <sup>1</sup>/<sub>2</sub>xe<sup><sup>-1</sup>/<sub>2</sub>x</sup>
+ <sup>dy</sup>/<sub>dx</sub> = e<sup><sup>-1</sup>/<sub>2</sub>x</sup>(<sup>1</sup>/<sub>2</sub>x - 2) <br>
 
 
 </span>
+Now we can equate this expression to 0 to find the x-coordinate of the stationary point M.
+
+<span class = "equation">
+  e<sup><sup>-1</sup>/<sub>2</sub>x</sup>(<sup>1</sup>/<sub>2</sub>x - 2) = 0 <br>
+  (<sup>1</sup>/<sub>2</sub>x - 2) = 0 <br>
+  (<sup>1</sup>/<sub>2</sub>x = 2 <br>
+  x = 4 <br>
+
+</span>
+
+Remember to also calculate the y-coordinate <br>
+
+<span class = "equation">
+  x = 4 <br>
+  y = (2 - x)e<sup><sup>-1</sup>/<sub>2</sub>x</sup> <br>
+  y = e<sup><sup>-1</sup>/<sub>2</sub>4</sup> <br>
+  y = -2e<sup><sup>-1</sup>/<sub>2</sub>x</sup> <br>
+</span>
 
 </p>
-  </div>
+
+<!--Question 10B: Area under graph-->
+
+<p class = "explanation centre">
+  To find the shaded area under curve, first we need to know the limits, ie the x values of the shaded region. <br>
+  From the graph itself, we can tell that the first x value is 0, while the second one is when y = 0. <br>
+
+
+
+<span class = "equation">
+ y = (2 - x)e<sup><sup>-1</sup>/<sub>2</sub>x</sup> <br>
+(2 - x)e<sup><sup>-1</sup>/<sub>2</sub>x</sup> = 0 <br>
+2 - x = 0 <br>
+x = 2 <br>
+</span>
+
+Alright now we'll have to find the integral and use it to calculate the area of the curve from x = 0 -> 2. <br>
+We can use  the ∫uv' = uv + ∫vu' formula in the booklet to integrate y = (2 - x)e<sup><sup>-1</sup>/<sub>2</sub>x</sup>. <br>
+Keep in mind that we'll be differentiating u and integrating v', so be careful with your selection of terms. <br>
+
+The derivative of (2 - x) is simply -1 so we should set it to u. That leaves e<sup><sup>-1</sup>/<sub>2</sub>x</sup> as v'. <br>
+
+
+<span class = "equation">
+
+  ∫uv' = uv + ∫vu' = (2 - x)e<sup><sup>-1</sup>/<sub>2</sub>x</sup> <br>
+  u = (2 - x)   u' = -1 <br>
+  v'= e<sup><sup>-1</sup>/<sub>2</sub>x</sup>    v = -2e<sup><sup>-1</sup>/<sub>2</sub>x</sup> <br>
+
+  ∫(2 - x)e<sup><sup>-1</sup>/<sub>2</sub>x</sup> = -2e<sup><sup>-1</sup>/<sub>2</sub>x</sup>(2 - x) - ∫-2e<sup><sup>-1</sup>/<sub>2</sub>x</sup> - 1.dx <br>
+  ∫(2 - x)e<sup><sup>-1</sup>/<sub>2</sub>x</sup> = -2e<sup><sup>-1</sup>/<sub>2</sub>x</sup>(2 - x) -2∫e<sup><sup>-1</sup>/<sub>2</sub>x</sup>.dx <br>
+  ∫(2 - x)e<sup><sup>-1</sup>/<sub>2</sub>x</sup> = -2e<sup><sup>-1</sup>/<sub>2</sub>x</sup>(2 - x) -2(-2e<sup><sup>-1</sup>/<sub>2</sub>x</sup>) <br>
+  ∫(2 - x)e<sup><sup>-1</sup>/<sub>2</sub>x</sup> = -4e<sup><sup>-1</sup>/<sub>2</sub>x</sup> +2xe<sup><sup>-1</sup>/<sub>2</sub>x</sup> + 4e<sup><sup>-1</sup>/<sub>2</sub>x</sup> <br>
+  ∫(2 - x)e<sup><sup>-1</sup>/<sub>2</sub>x</sup> = 2xe<sup><sup>-1</sup>/<sub>2</sub>x</sup> <br>
+
+</span>
+Now that we have the integral of (2 - x)e<sup><sup>-1</sup>/<sub>2</sub>x</sup>, we can just substitute in our x values to find the area when 0 < x < 2. <br>
+
+<span class = "equation">
+  Area = [2xe<sup><sup>-1</sup>/<sub>2</sub>x</sup>]<sup>2</sup><sub>0</sub> <br>
+  Area = [4e<sup>-1</sup>] - [0]
+
+</span>
+</p>
+</div>
+
+<!-- Question 11A: Vectors Simultaneous Equation -->
+<div class = "Question_11">
+<p class = "explanation centre"> When two lines intersect, they share the exact same i, j and k values in a 3D space. <br>
+  This is a straightforward question involving three simultaneous equations. <br>
+The three vector equations for the first line are:
+
+<span class = "equation">
+  i: 1 + aƛ <br>
+  j: 2 + 2ƛ <br>
+  k: 1 - ƛ <br>
+
+</span>
+
+While the three equations for the second line are: <br>
+
+<span class = "equation">
+  i: 2 + 2μ <br>
+  j: 1  - μ <br>
+  k: -1 + μ <br>
+  
+</span>
+
+Now we can just equate i, j and k with each other. We start by finding either ƛ or μ, then we can find a. <br>
+
+<span class = "equation">
+  1 + aƛ = 2 + 2μ <br>
+  2 + 2ƛ = 1  - μ <br>
+  1 - ƛ = -1 + μ <br>
+
+  μ = 2 - ƛ <br>
+
+  2 + 2ƛ = 1 - (2 - ƛ) <br>
+  2 + 2ƛ = -1 + ƛ <br>
+  ƛ = -3 <br>
+
+  μ = 2 - (-3) <br>
+  μ = 5 <br>
+
+  1 + a(-3) = 2 + 2(5) <br>
+  1 - 3a = 2 + 10 <br>
+  -3a = 11 <br>
+  a = <sup>11</sup>/<sub>-3</sub> <br>
+
+</span> 
+</p>
+
+<!--Question 11B: Vector angles -->
+
+<p class = "explanation centre"> This exam ends with a free 6 marks. We can simply use the formula in the booklet
+  to find the value of a. <br>
+  The a and b we are interested in are the functional second part of the line vector, not the starting position of the line. <br>
+  So the (ai + 2j - k) and (2i - j + k).
+
+
+  <span class = "equation">
+    a.b = |a||b| cos(θ) <br>
+    cos(θ) = <sup>a.b</sup>/<sub>|a||b|</sub> <br>
+
+    θ = cos<sup>-1</sup>(<sup>1</sup>/<sub>6</sub>) <br>
+    a = (ai + 2j - k) <br>
+    b = (2i - j + k) <br>
+
+    cos(θ) = <sup>1</sup>/<sub>6</sub> <br>
+    a.b = a(2) + 2(-1) -1(1) <br>
+    |a| = √(a<sup>2</sup> + 2<sup>2</sup> + (-1)<sup>2</sup>)<br>
+    |b| = √(2<sup>2</sup> + (-1)<sup>2</sup> + 1<sup>2</sup>) <br>
+    |a|.|b| = √6 * √(a<sup>2</sup> + 5)
+
+    <sup>2a - 3</sup>/<sub>√6 * √(a<sup>2</sup> + 5) = <sup>1</sup>/<sub>6</sub> <br>
+    12a - 18 =  √6 * √(a<sup>2</sup> + 5)<br>
+    (12a - 18)<sup>2</sup> =  (√6 * √(a<sup>2</sup> + 5))<sup>2</sup> <br>
+    144a<sup>2</sup> - 432a + 324 = 6(a<sup>2</sup> + 5) <br>
+    144a<sup>2</sup> - 432a + 324 = 6a<sup>2</sup> + 30 <br>
+    138a<sup>2</sup> - 432a + 294 = 0 <br>
+    a = <sup>49</sup>/<sub>32</sub> or 1 <br>
+  </span>
+
+
+
+</p>
+
+
+
+
+
+
+
+
+
   </div> <!-- Main Div -->
 </body>
 </html>
